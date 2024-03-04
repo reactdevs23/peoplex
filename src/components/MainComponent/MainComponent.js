@@ -4,10 +4,7 @@ import classes from "./MainComponent.module.css";
 const MainComponent = ({ logo, pattern, arrow, initialPage, data }) => {
   return (
     <>
-      <div
-        className={classes.mainWrapper}
-        style={{ background: initialPage.bg }}
-      >
+      <div className={[classes.mainWrapper].join(" ")}>
         {" "}
         <div className={[classes.wrapper, classes.initialPage].join(" ")}>
           <div className={classes.header}>
@@ -28,7 +25,11 @@ const MainComponent = ({ logo, pattern, arrow, initialPage, data }) => {
       {data.map((el, i) => (
         <React.Fragment key={i}>
           {(i + 1) % 2 === 0 ? (
-            <div className={classes.mainWrapper} style={{ background: el.bg }}>
+            <div
+              className={[classes.mainWrapper, classes.otherPagesWrapper].join(
+                " "
+              )}
+            >
               <div
                 className={[
                   classes.wrapper,

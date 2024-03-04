@@ -15,9 +15,8 @@ function App() {
     accentColor: "#3A0CA3",
     logo: logo,
     arrow: arrow,
-    pattern: <Pattern />,
+    pattern: <Pattern color="#F72585" />,
     initialPage: {
-      bg: "#3A0CA3",
       heading:
         "Building the best candidate and employee experience through analytics",
     },

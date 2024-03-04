@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background: var(--accentColor);
+}
+.otherPagesWrapper {
+  background: var(--primaryColor);
 }
 
 .wrapper {
