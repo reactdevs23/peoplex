@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import MainComponent from "./components/MainComponent/MainComponent";
 
-import { arrow, logo, pattern } from "./images";
+import { arrow, logo } from "./images";
 import Pattern from "./images/Pattern";
 
 function App() {
